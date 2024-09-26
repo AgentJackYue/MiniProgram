@@ -1,0 +1,11 @@
+<view class="container">
+  <view class ="text">{{data}}</view>
+  <block wx:for="{{notes}}" wx:key="index">
+    <view class="note" style="width: 300px; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word;" bind:tap="navigateToAddOrEdit" data-id="{{item.id}}">
+      <text class = "title">{{item.title}}</text>
+      <text>\n</text>
+      <text>{{item.content}}</text>
+    </view>
+  </block>
+  <button bind:tap="navigateToAddOrEdit">+</button>
+</view>

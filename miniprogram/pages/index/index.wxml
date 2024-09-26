@@ -1,0 +1,15 @@
+<view class="page-container">
+    <view class ="cover">
+      <!-- <button bindtap="getUserProfile">点击获取头像</button> -->
+      <image src= "{{avatarUrl}}" class="logo" />
+    </view>
+  <view class="content">
+    <view class ="title" >{{hello}}</view>
+    <view class ="introduce">
+      这是一个记事本小程序,你可以记录任何事情，它将被保存在本地
+    </view>
+  </view>
+  <view class = "container">
+    <view class ="text" bind:tap="changescroll" >{{textcheck}}</view>
+  </view>
+</view>

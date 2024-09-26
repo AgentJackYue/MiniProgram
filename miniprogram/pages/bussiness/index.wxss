@@ -1,0 +1,18 @@
+.text{
+
+  font-weight: 500;
+  color: #1b9fa8;
+  font-size: 40rpx;
+}
+.container {
+  padding: 20rpx;
+  background-color: rgb(255, 255, 255);
+}
+.title{
+  font-weight: bolder;
+}
+.note {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background-color: #3ecbee;
+}

@@ -1,0 +1,8 @@
+.container {
+  padding: 20rpx;
+}
+.note {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background-color: #f0f0f0;
+}

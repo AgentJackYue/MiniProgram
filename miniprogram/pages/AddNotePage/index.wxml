@@ -1,0 +1,6 @@
+<view class="container">
+  <input placeholder="标题" value="{{title}}" bindinput="inputTitle" />
+  <textarea placeholder="内容" value="{{content}}" bindinput="inputContent" />
+  <button bindtap="saveNote">保存</button>
+  <button bindtap="deleteNote">删除</button>
+</view>
