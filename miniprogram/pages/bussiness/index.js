@@ -22,7 +22,7 @@ Page({
       noteId = e.currentTarget.dataset.id;
     }
     wx.navigateTo({
-      url: `/pages/AddNotePage/index?id=${noteId}`
+      url: `/pages/AddNotePage/AddNotePage?id=${noteId}`
     });
   },
   getNotesFromStorage: function() {
