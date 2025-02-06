@@ -14,7 +14,7 @@ Page({
     changescroll:function(){
       console.log("press2")
       wx.navigateTo({
-        url: '/pages/bussiness/index'
+        url: '/pages/bussiness/bussiness'
       });
     },
 });

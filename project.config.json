@@ -1,6 +1,5 @@
 {
   "miniprogramRoot": "miniprogram/",
-  "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
     "urlCheck": true,
     "es6": true,
@@ -40,29 +39,7 @@
   "projectname": "quickstart-wx-cloud",
   "libVersion": "latest",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
-  "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
-        }
-      ]
-    }
-  },
+  "condition": {},
   "compileType": "miniprogram",
   "srcMiniprogramRoot": "miniprogram/",
   "packOptions": {

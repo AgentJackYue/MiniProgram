@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/bussiness/index",
+    "pages/bussiness/bussiness",
     "pages/AddNotePage/AddNotePage"],
   "window": {
     "backgroundColor": "#F6F6F6",

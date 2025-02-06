@@ -15,4 +15,8 @@
   margin-bottom: 20rpx;
   padding: 20rpx;
   background-color: #3ecbee;
+  transition: transform 0.05s ease;
+}
+.note.active {
+  transform: scale(0.9);
 }
