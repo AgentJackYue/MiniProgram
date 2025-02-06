@@ -56,27 +56,34 @@ Page({
     wx.navigateBack();
   },
   deleteNote: function() {
-    const noteId = this.data.noteId;
-    let notes = this.getNotesFromStorage();
-  
-    // 过滤掉要删除的记事
-    notes = notes.filter(note => note.id !== noteId);
-  
-    // 更新本地存储
-    wx.setStorageSync('notes', notes);
-  
-    // 清空当前页面的记事数据
-    this.setData({
-      title: '',
-      content: '',
-      noteId: null
-    });
-  
-    // 调用App实例的方法来更新展示页面的数据
-    const app = getApp();
-    app.globalData.updateNotes();
-  
-    wx.navigateBack();
+    wx.showModal({
+      title: '确认删除',
+      content: '删除后将无法找回',
+      success :(res) => {
+        if (res.confirm) {
+          console.log('用户点击确定')
+          const noteId = this.data.noteId;
+          let notes = this.getNotesFromStorage();
+          // 过滤掉要删除的记事
+          notes = notes.filter(note => note.id !== noteId);
+          // 更新本地存储
+          wx.setStorageSync('notes', notes);
+          // 清空当前页面的记事数据
+          this.setData({
+            title: '',
+            content: '',
+            noteId: null
+          });
+          // 调用App实例的方法来更新展示页面的数据
+          const app = getApp();
+          app.globalData.updateNotes();
+          wx.navigateBack();
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+   
   },
   getNotesFromStorage: function() {
     // 从本地存储获取所有记事
