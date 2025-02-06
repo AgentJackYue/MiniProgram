@@ -20,3 +20,9 @@
 .note.active {
   transform: scale(0.9);
 }
+.create-time {
+  font-size: 24rpx; 
+  color: #888; 
+  text-align: right; 
+  margin-top: 10rpx; 
+}

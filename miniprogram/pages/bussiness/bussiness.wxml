@@ -9,6 +9,7 @@
       <text class = "title">{{item.title}}</text>
       <text>\n</text>
       <text>{{item.content}}</text>
+      <view class="create-time">{{item.createTime}}</view>
     </view>
   </block>
   <button bind:tap="navigateToAddOrEdit">+</button>
