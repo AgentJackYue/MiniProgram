@@ -1,4 +1,3 @@
-// pages/somePage/somePage.js
 const utils = require('../../utils/utils.js'); // 引入 utils 模块
 
 Page({

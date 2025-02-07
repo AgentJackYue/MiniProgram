@@ -1,6 +1,10 @@
 <view class="container">
-  <input placeholder="标题" value="{{title}}" bindinput="inputTitle" />
-  <textarea placeholder="内容" value="{{content}}" bindinput="inputContent" />
-  <button bindtap="saveNote">保存</button>
-  <button bindtap="deleteNote">删除</button>
+  <view class="input-section">
+    <input class="title-input" placeholder="标题" value="{{title}}" bindinput="inputTitle" maxlength="22"/>
+    <textarea class="content-input" placeholder="内容" value="{{content}}" bindinput="inputContent" maxlength="10000"  />
+  </view>
+  <view class="button-section">
+    <button bindtap="deleteNote" >删除</button>
+    <button bindtap="saveNote">保存</button>
+  </view>
 </view>

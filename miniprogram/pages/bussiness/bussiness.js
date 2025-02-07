@@ -17,9 +17,10 @@ Page({
   },
   loadNotes: function() {
     const notes = this.getNotesFromStorage();
+    const filteredNotes = notes.filter(note => note.title.trim() || note.content.trim());
+    wx.setStorageSync('notes', filteredNotes);
     this.setData({
-      notes: notes.filter(note => note.title.trim() || note.content.trim()),
-      notes: notes.map(note => ({...note,activeClass: '' }))// 初始化 activeClass
+      notes: filteredNotes.map(note => ({ ...note, activeClass: '' }))
     });
   },
   navigateToAddOrEdit: function(e) {

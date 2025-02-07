@@ -1,8 +1,34 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 使用视口高度 */
   padding: 20rpx;
+  background-color: rgb(255, 255, 255);
 }
-.note {
-  margin-bottom: 20rpx;
-  padding: 20rpx;
-  background-color: #f0f0f0;
+
+.input-section {
+  flex: 1; 
+  /* overflow: auto;  */
+  background-color: rgb(255, 255, 255);
+}
+
+.title-input {
+  padding: 10rpx 0;
+  width: 80%; 
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.content-input {
+  font-size: large;
+  height: 75vh;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between; /* 按钮之间有间隔 */
+  margin-top: 20rpx; /* 与输入区域的间距 */
+  padding: 20rpx 0; /* 按钮区域的上下内边距 */
+  background-color: #f5f5f5; /* 按钮区域的背景颜色 */
 }
